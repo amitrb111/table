@@ -12,7 +12,7 @@
 				<Text text="firstname" />
 			</Column>
 			<Column>
-				<Text text="lastname" />
+				<Text text="{lastname}" />
 			</Column>
 		<!--	<Column
 				minScreenWidth="Desktop"
