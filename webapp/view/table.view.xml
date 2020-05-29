@@ -1,0 +1,52 @@
+<mvc:View controllerName="Demo.Table.controller.table" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<Table id="idTable"
+						 items="{
+			path: 'data1>/Employee' }">
+			<columns>
+			<Column>
+				<Text text="firstname" />
+			</Column>
+			<Column>
+				<Text text="lastname" />
+			</Column>
+		<!--	<Column
+				minScreenWidth="Desktop"
+				demandPopin="true"
+				hAlign="End">
+				<Text text="Dimensions" />
+			</Column>
+			<Column
+				minScreenWidth="Desktop"
+				demandPopin="true"
+				hAlign="Center">
+				<Text text="Weight" />
+			</Column>
+			<Column
+				hAlign="End">
+				<Text text="Price" />
+			</Column>	-->
+		</columns>
+			<items>
+			<ColumnListItem>
+				<cells>
+					<Text
+						text="{data1>firstname}" />
+					<Text
+						text="{data1>lastname}" />
+				</cells>
+			</ColumnListItem>
+		</items>
+		
+		
+						</Table>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
